@@ -47,3 +47,17 @@ int main()
 
     return 0;
 }
+
+
+import java.net.InetAddress;
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Domain name : eg:facebook.com ");
+        String Domain_name = sc.nextLine();
+        System.out.println(InetAddress.getByName(Domain_name).getHostAddress());
+    }
+}
